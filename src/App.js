@@ -11,6 +11,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
+
 const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 
 
@@ -43,9 +44,9 @@ function App() {
           </Routes>
         </div>
         <BottomNavigation showLabels className='DownNav'>
-          <BottomNavigationAction as={Link} to="/AboutUs" label="About the creators" icon={<ContactPageIcon />} />
-          <BottomNavigationAction as={Link} to="/Rouletteo" label="Rouletteo" icon={<HomeIcon />} />
-          <BottomNavigationAction onClick={colorMode.toggleColorMode} label="Toggle Darkmode" icon={<ToggleOnIcon />} />
+          <BottomNavigationAction component={Link} to="/AboutUs" label="About the creators" icon={<ContactPageIcon />} />
+          <BottomNavigationAction component={Link} to="/Rouletteo" label="Rouletteo" icon={<HomeIcon />} />
+          <BottomNavigationAction onClick={colorMode.toggleColorMode} label=" Toggle Darkmode" icon={<ToggleOnIcon />} />
         </BottomNavigation>
       </Router>
     </div>
