@@ -16,7 +16,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function Rouletteo() {
     function pickRand() {
-        var list = document.getElementById("screenText").value.split("\n");
+        var list = document.getElementById("outlined-multiline-static").value.split("\n");
         alert(list[Math.floor(Math.random() * list.length)])
     }
     return (
@@ -24,7 +24,7 @@ function Rouletteo() {
             <h1>Make a list here:</h1>
             <Box sx={{ width: '100%' }}>
                 <Stack spacing={2} className="NoDoubtPut">
-                    <Item className="screenText"><TextField id="outlined-multiline-static" label="Input" multiline rows={20} defaultValue="" placeholder="Put your list here"></TextField></Item>
+                    <Item className="screenText"><TextField id="outlined-multiline-static" label="Input" multiline rows={15} defaultValue="" placeholder="Put your list here"></TextField></Item>
                     <Item><Button onClick={pickRand}>Pick a random list entry</Button></Item>
                 </Stack>
             </Box>
