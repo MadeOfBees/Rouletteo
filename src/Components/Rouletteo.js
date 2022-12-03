@@ -1,7 +1,7 @@
 function Rouletteo() {
     return (
         <div>
-            <h1>Rouletteo</h1>
+            <h1>-</h1>
         </div>
     );
 }

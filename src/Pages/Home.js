@@ -3,7 +3,7 @@ import Rouletteo from '../Components/Rouletteo';
 
 function Homepage() {
     return (
-      <div className='Central'>
+      <div>
         <Rouletteo />
       </div>
     );
