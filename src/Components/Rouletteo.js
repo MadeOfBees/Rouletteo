@@ -24,7 +24,7 @@ function Rouletteo() {
             <h1>Make a list here:</h1>
             <Box sx={{ width: '100%' }}>
                 <Stack spacing={2} className="NoDoubtPut">
-                    <Item className="screenText"><TextField id="outlined-multiline-static" label="Input" multiline rows={15} defaultValue="" placeholder="Put your list here"></TextField></Item>
+                    <Item className="screenText"><TextField id="outlined-multiline-static" label="Input" multiline rows={10} defaultValue="" placeholder="Put your list here"></TextField></Item>
                     <Item><Button onClick={pickRand}>Pick a random list entry</Button></Item>
                 </Stack>
             </Box>
