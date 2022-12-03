@@ -13,8 +13,6 @@ function App() {
           path="/Rouletteo"
           element={<Home />}
         />
-      </Routes>
-      <Routes>
         <Route
           path="/AboutUs"
           element={<AboutUs />}
