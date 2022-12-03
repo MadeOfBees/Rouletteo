@@ -37,7 +37,7 @@ function App() {
           </Routes>
         </div>
         <BottomNavigation showLabels className='DownNav'>
-          <BottomNavigationAction component={Link} to="/AboutUs" label="About the creators" icon={<ContactPageIcon />} />
+          <BottomNavigationAction component={Link} to="/AboutUs" label="About us" icon={<ContactPageIcon />} />
           <BottomNavigationAction component={Link} to="/Rouletteo" label="Rouletteo" icon={<HomeIcon />} />
           <BottomNavigationAction onClick={colorMode.toggleColorMode} label=" Toggle Darkmode" icon={theme.palette.mode === 'dark' ? <ToggleOffIcon /> : <ToggleOnIcon />} />
         </BottomNavigation>
