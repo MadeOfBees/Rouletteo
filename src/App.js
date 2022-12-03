@@ -7,8 +7,9 @@ import { BottomNavigation, BottomNavigationAction } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 import ToggleOnIcon from '@mui/icons-material/ToggleOn';
+import ToggleOffIcon from '@mui/icons-material/ToggleOff';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import {useTheme, createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
 
@@ -17,15 +18,7 @@ const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 
 function App() {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
-  const theme = React.useMemo(
-    () =>
-      createTheme({
-        palette: {
-          mode: prefersDarkMode ? 'dark' : 'light',
-        },
-      }),
-    [prefersDarkMode],
-  );
+  const theme = useTheme(prefersDarkMode);
   const colorMode = React.useContext(ColorModeContext);
   return (
     <div>
@@ -46,7 +39,7 @@ function App() {
         <BottomNavigation showLabels className='DownNav'>
           <BottomNavigationAction component={Link} to="/AboutUs" label="About the creators" icon={<ContactPageIcon />} />
           <BottomNavigationAction component={Link} to="/Rouletteo" label="Rouletteo" icon={<HomeIcon />} />
-          <BottomNavigationAction onClick={colorMode.toggleColorMode} label=" Toggle Darkmode" icon={<ToggleOnIcon />} />
+          <BottomNavigationAction onClick={colorMode.toggleColorMode} label=" Toggle Darkmode" icon={theme.palette.mode === 'dark' ? <ToggleOffIcon /> : <ToggleOnIcon />} />
         </BottomNavigation>
       </Router>
     </div>
