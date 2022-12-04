@@ -54,11 +54,17 @@ function Rouletteo() {
         }
     }
     function pickRand() {
-        let list = input ;
-        var rand = JSON.stringify(list[Math.floor(Math.random() * list.length)]);
-        console.log(rand);
-        setOpen(true);
-        setOutput(rand);
+        if (input) {
+            let list = input;
+            var rand = JSON.stringify(list[Math.floor(Math.random() * list.length)]);
+            var notObject = rand.substring(1, rand.length-1);
+            var noQoutes = notObject.replace(/"/g, "");
+            var newLine = noQoutes.replace(/,/g, "\n");
+            var final = newLine.replace(/:/g, ": ");
+            setOpen(true);
+            setOutput(final);
+        }
+
     }
 
 
@@ -89,7 +95,7 @@ function Rouletteo() {
                         <Typography id="transition-modal-title" variant="h6" component="h2">
                             We have chosen:
                         </Typography>
-                        <Typography id="modal-modal-description" className='Wrap'>
+                        <Typography id="modal-modal-description" className='NoCont'>
                             {output}
                         </Typography>
                     </Box>
