@@ -1,24 +1,20 @@
-# Rouletteo 
-
+# Rouletteo
+[Untitled_ Dec 4, 2022 2_00 PM.webm](https://user-images.githubusercontent.com/9198297/205510390-d4f42ab7-64f1-4540-bb82-b09cf85c0801.webm)
     
 ## Description: 
- Input a list and we'll pick one for you 
-![1](https://user-images.githubusercontent.com/9198297/205467513-3691a982-2fb5-4f07-8bd0-b7ef407dd640.jpg)
-
+    Just input a .xlsx file and we'll pick a row for you 
     
 ## Installation/Instructions: 
- Click the Github Pages link:https://madeofbees.github.io/Rouletteo/ then navigate to the Rouletteo tab on the bottom nav-bar, enter a list, and once your list is finished click the button and we'll pick for you! 
-![2](https://user-images.githubusercontent.com/9198297/205467516-62a38035-dbf3-46d3-aa7b-5ee6e65ab7ad.jpg)
-
+    Click the Github Pages link: https://madeofbees.github.io/Rouletteo/ then navigate to the Rouletteo tab on the bottom nav-bar, enter a list, and once your list is finished click the button and we'll pick a random row for you! 
     
 ## Report an issue: 
- Yell loudly discribing your your bug and how to replicate the issue
+    Yell loudly discribing your your bug and how to replicate the issue
 
     
 ## Support me: 
- This project was made by MadeOfBees (https://github.com/MadeOfBees), if you want to support this project: give me your code plz
+    This project was made by MadeOfBees (https://github.com/MadeOfBees), if you want to support this project: give me your code plz
 
     
-## Licence: 
- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## Licence:
+    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  Using the MIT licence: https://api.github.com/licenses/MIT 
