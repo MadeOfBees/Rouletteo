@@ -1,5 +1,9 @@
 # Rouletteo
-[Untitled_ Dec 4, 2022 2_00 PM.webm](https://user-images.githubusercontent.com/9198297/205510390-d4f42ab7-64f1-4540-bb82-b09cf85c0801.webm)
+
+
+https://user-images.githubusercontent.com/9198297/205510710-5d8e6987-1599-4e95-a23d-5a67d1ffd114.mp4
+
+
     
 ## Description: 
     Just input a .xlsx file and we'll pick a row for you 
