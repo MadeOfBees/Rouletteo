@@ -16,6 +16,8 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.6",
+    "toasty": "^6.0.3",
+    "use-konami": "^1.0.0",
     "xlsx": "^0.18.5"
   },
   "scripts": {

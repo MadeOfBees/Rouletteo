@@ -74,7 +74,7 @@ function Rouletteo() {
             <Box sx={{ width: '100%' }}>
                 <Stack spacing={2} className="NoDoubtPut">
                     <Item className="screenText">
-                        <Input className='fileInput' type="file" id="file" accept=".xlsx, " onChange={importFiles} />
+                        <Input className='fileInput' type="file" id="file" accept=".xlsx" onChange={importFiles} />
                         <Item><Button onClick={pickRand}>Pick a random list entry</Button></Item>
                     </Item>
                 </Stack>
