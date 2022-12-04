@@ -8,6 +8,7 @@ import Backdrop from '@mui/material/Backdrop';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import Typography from '@mui/material/Typography';
+import { read, utils } from "xlsx";
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -35,22 +36,30 @@ function Rouletteo() {
     const handleClose = () => setOpen(false);
     const [output, setOutput] = React.useState();
 
-    function pickRand() {
-        // takes whats in the iput labled fileInput
-        var list = document.getElementById("fileInput");
-        if (list.length > 1) {
-            setOpen(true);
-            setOutput(list[Math.floor(Math.random() * list.length)]);
-            return;
+    const pickRand = (e) => {
+        e.preventDefault();
+        if (e.target.files) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const data = e.target.result;
+                const workbook = read(data, { type: "array" });
+                const sheetName = workbook.SheetNames[0];
+                const worksheet = workbook.Sheets[sheetName];
+                const json = utils.sheet_to_json(worksheet);
+                console.log(json);
+            };
+            reader.readAsArrayBuffer(e.target.files[0]);
         }
     }
+    
+    
     return (
         <div>
             <h1>Make a list here:</h1>
             <Box sx={{ width: '100%' }}>
                 <Stack spacing={2} className="NoDoubtPut">
                     <Item className="screenText">
-                        <input className='fileInput' type="file" id="file" accept=".xlsx," />
+                        <input className='fileInput' type="file" id="file" accept=".xlsx, "onChange={pickRand} />
                     </Item>
                     <Item><Button onClick={pickRand}>Pick a random list entry</Button></Item>
                 </Stack>
