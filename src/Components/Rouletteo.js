@@ -17,7 +17,9 @@ const Item = styled(Paper)(({ theme }) => ({
 function Rouletteo() {
     function pickRand() {
         var list = document.getElementById("outlined-multiline-static").value.split("\n");
-        alert(list[Math.floor(Math.random() * list.length)])
+        if (list.length > 1) {
+            alert(list[Math.floor(Math.random() * list.length)]);
+        }
     }
     return (
         <div>
