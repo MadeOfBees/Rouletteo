@@ -4,12 +4,10 @@ import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
-import TextField from '@mui/material/TextField';
 import Backdrop from '@mui/material/Backdrop';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import Typography from '@mui/material/Typography';
-import { Link } from 'react-router-dom';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -38,7 +36,8 @@ function Rouletteo() {
     const [output, setOutput] = React.useState();
 
     function pickRand() {
-        var list = document.getElementById("outlined-multiline-static").value.split("\n");
+        // takes whats in the iput labled fileInput
+        var list = document.getElementById("fileInput");
         if (list.length > 1) {
             setOpen(true);
             setOutput(list[Math.floor(Math.random() * list.length)]);
@@ -51,20 +50,9 @@ function Rouletteo() {
             <Box sx={{ width: '100%' }}>
                 <Stack spacing={2} className="NoDoubtPut">
                     <Item className="screenText">
-                        <TextField id="outlined-multiline-static" label="Input" multiline rows={10} defaultValue="" placeholder="
-                        Put
-                        Your
-                        List
-                        Here
-                        And
-                        Click
-                        The
-                        Button
-                        To Begin
-                        "></TextField>
+                        <input className='fileInput' type="file" id="file" accept=".xlsx," />
                     </Item>
                     <Item><Button onClick={pickRand}>Pick a random list entry</Button></Item>
-                    <Item><Button component={Link} to="/Excell">Excell</Button></Item>
                 </Stack>
             </Box>
             <Modal
