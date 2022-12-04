@@ -6,8 +6,7 @@ import useKonami from 'use-konami';
 const MyComponent = () => {
   useKonami({
     onUnlock: () => {
-      let t = toasty();
-      t.trigger()
+      toasty().trigger();
       console.log('*the sound of bees gets louder*');
     }
   });
