@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Rouletteo/static/css/main.5f09b182.css",
-    "main.js": "/Rouletteo/static/js/main.9fd46d3e.js",
+    "main.js": "/Rouletteo/static/js/main.dc4ad342.js",
     "index.html": "/Rouletteo/index.html",
     "main.5f09b182.css.map": "/Rouletteo/static/css/main.5f09b182.css.map",
-    "main.9fd46d3e.js.map": "/Rouletteo/static/js/main.9fd46d3e.js.map"
+    "main.dc4ad342.js.map": "/Rouletteo/static/js/main.dc4ad342.js.map"
   },
   "entrypoints": [
     "static/css/main.5f09b182.css",
-    "static/js/main.9fd46d3e.js"
+    "static/js/main.dc4ad342.js"
   ]
 }
