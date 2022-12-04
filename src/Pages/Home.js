@@ -1,10 +1,10 @@
 // import the component rouletteo
-import Rouletteo from '../Components/Rouletteo';
+import Excell from '../Pages/Excell';
 
 function Homepage() {
     return (
       <div>
-        <Rouletteo />
+        <Excell />
       </div>
     );
   }

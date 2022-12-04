@@ -1,7 +1,6 @@
 // import home page
 import Home from './Pages/Home';
 import AboutUs from './Pages/AboutUs';
-import Excell from './Pages/Excell';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { BottomNavigation, BottomNavigationAction } from '@mui/material';
@@ -34,10 +33,6 @@ function App() {
             <Route
               path="/"
               element={<Home />}
-            />
-            <Route
-              path="/Excell"
-              element={<Excell />}
             />
             <Route
               path="/AboutUs"
