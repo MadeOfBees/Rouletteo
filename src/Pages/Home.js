@@ -1,15 +1,10 @@
 // import the component rouletteo
-import Excell from '../Pages/Excell';
+import Excell from './XLREight';
 import toasty from 'toasty';
 import useKonami from 'use-konami';
 
 const MyComponent = () => {
-  useKonami({
-    onUnlock: () => {
-      toasty().trigger();
-      console.log('*the sound of bees gets louder*');
-    }
-  });
+  useKonami({onUnlock: () => toasty().trigger()});
   return (
     <div>
       <Excell />
