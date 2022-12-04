@@ -9,7 +9,7 @@ import ContactPageIcon from '@mui/icons-material/ContactPage';
 import ToggleOnIcon from '@mui/icons-material/ToggleOn';
 import ToggleOffIcon from '@mui/icons-material/ToggleOff';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import {useTheme, createTheme, ThemeProvider } from '@mui/material/styles';
+import { useTheme, createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
 
@@ -28,6 +28,10 @@ function App() {
           <Routes className="Central">
             <Route
               path="/Rouletteo"
+              element={<Home />}
+            />
+            <Route
+              path="/"
               element={<Home />}
             />
             <Route
