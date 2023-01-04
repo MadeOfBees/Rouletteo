@@ -1,7 +1,5 @@
 # Rouletteo
-
 https://user-images.githubusercontent.com/9198297/205510821-cb612ede-dd41-4da8-9d72-d6f51a02529f.mp4
-    
 ## Description: 
  Just input a .xlsx file and we'll pick a row for you 
     
