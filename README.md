@@ -7,6 +7,8 @@ https://user-images.githubusercontent.com/9198297/205510821-cb612ede-dd41-4da8-9
     
 ## Installation/Instructions: 
  Click the Github Pages link: https://madeofbees.github.io/Rouletteo/ then navigate to the Rouletteo tab on the bottom nav-bar, enter a list, and once your list  is finished click the button and we'll pick a random row for you! 
+
+![Screenshot 2023-02-04 134636](https://user-images.githubusercontent.com/9198297/216784342-5b7b516f-db80-47d9-ae89-cd7d88212dc4.jpg)
     
 ## Report an issue: 
  Yell loudly discribing your your bug and how to replicate the issue
