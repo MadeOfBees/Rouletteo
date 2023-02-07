@@ -11,7 +11,7 @@ https://user-images.githubusercontent.com/9198297/205510821-cb612ede-dd41-4da8-9
 ![Screenshot 2023-02-04 134636](https://user-images.githubusercontent.com/9198297/216784342-5b7b516f-db80-47d9-ae89-cd7d88212dc4.jpg)
     
 ## Report an issue: 
- Yell loudly discribing your your bug and how to replicate the issue
+ Contact me at imMadeOfBees@gmail.com explaining the issue and how to replicate it.
 
     
 ## Support me: 
